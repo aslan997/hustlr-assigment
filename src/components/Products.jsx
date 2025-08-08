@@ -27,14 +27,6 @@ const Products = () => {
   const fetchProducts = useCallback(async () => {
     try {
       setLoading(true);
-      // const response = await fetch("https://fakestoreapi.com/products/");
-      // const data = await response.json();
-      // // Simulate out of stock for every 4th product
-      // const modifiedData = data.map((product, index) => ({
-      //   ...product,
-      //   inStock: index % 6 !== 0, // Just a simulation: every 4th is out of stock
-      // }));
-
       setProducts(mockData);
       setFiltered(mockData);
     } catch (err) {
