@@ -28,8 +28,14 @@ const Products = () => {
       setLoading(true);
       const response = await fetch("https://fakestoreapi.com/products/");
       const data = await response.json();
-      setProducts(data);
-      setFiltered(data);
+      // Simulate out of stock for every 4th product
+      const modifiedData = data.map((product, index) => ({
+        ...product,
+        inStock: index % 6 !== 0, // Just a simulation: every 4th is out of stock
+      }));
+
+      setProducts(modifiedData);
+      setFiltered(modifiedData);
     } catch (err) {
       console.error("Failed to fetch products:", err);
     } finally {
@@ -61,15 +67,15 @@ const Products = () => {
     <>
       {[...Array(6)].map((_, idx) => (
         <div
-          className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4"
+          className="w-100"
           key={`skeleton-${idx}`}
         >
-          <Skeleton height={592} />
+          <Skeleton height={500} />
         </div>
       ))}
     </>
   );
-  console.log(products)
+
   return (
     <div className="container my-3 py-3">
       <div className="row">

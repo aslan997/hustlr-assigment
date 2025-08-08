@@ -7,6 +7,12 @@ const ProductCard = ({ product, handleAddToCart }) => {
 
   return (
     <div className="product-card text-center h-100">
+      {/* Overlay if out of stock */}
+      {!product.inStock && (
+        <div className="out-of-stock-overlay d-flex justify-content-center align-items-center">
+          <span className="out-of-stock-text">Out of Stock</span>
+        </div>
+      )}
       <div className="product-card-image-container">
         <img
           className="product-card-img-top p-3"
