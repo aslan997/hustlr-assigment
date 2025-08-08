@@ -7,6 +7,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 import toast from "react-hot-toast";
 import ProductCard from "./ProductCard";
+import { mockData } from "../data/mockData";
 
 const categoryFilters = [
   { label: "All", value: "all" },
@@ -26,16 +27,16 @@ const Products = () => {
   const fetchProducts = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products/");
-      const data = await response.json();
-      // Simulate out of stock for every 4th product
-      const modifiedData = data.map((product, index) => ({
-        ...product,
-        inStock: index % 6 !== 0, // Just a simulation: every 4th is out of stock
-      }));
+      // const response = await fetch("https://fakestoreapi.com/products/");
+      // const data = await response.json();
+      // // Simulate out of stock for every 4th product
+      // const modifiedData = data.map((product, index) => ({
+      //   ...product,
+      //   inStock: index % 6 !== 0, // Just a simulation: every 4th is out of stock
+      // }));
 
-      setProducts(modifiedData);
-      setFiltered(modifiedData);
+      setProducts(mockData);
+      setFiltered(mockData);
     } catch (err) {
       console.error("Failed to fetch products:", err);
     } finally {
