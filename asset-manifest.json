@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hustlr-assigment/static/css/main.35557caa.css",
+    "main.css": "/hustlr-assigment/static/css/main.2dad6b49.css",
     "main.js": "/hustlr-assigment/static/js/main.5173d5fd.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/hustlr-assigment/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/hustlr-assigment/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -8,11 +8,11 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/hustlr-assigment/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/hustlr-assigment/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/hustlr-assigment/index.html",
-    "main.35557caa.css.map": "/hustlr-assigment/static/css/main.35557caa.css.map",
+    "main.2dad6b49.css.map": "/hustlr-assigment/static/css/main.2dad6b49.css.map",
     "main.5173d5fd.js.map": "/hustlr-assigment/static/js/main.5173d5fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.35557caa.css",
+    "static/css/main.2dad6b49.css",
     "static/js/main.5173d5fd.js"
   ]
 }
